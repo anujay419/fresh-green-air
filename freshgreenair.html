@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh_green_air</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    <style>.mySlides{display: none;}</style>
+</head>
+<body class="webpage">
+    <div class="break">
+        <br>
+    </div>
+    
+    <h1 class="h1">Fresh_green_air.com</h1>
+
+    <nav><div id="navbar">
+        <button class="nav"><div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div></button>
+        
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">Blogs</a>
+        <a href="javascript:void(0)">About us</a>
+        <div class="dropdown">
+          &nbsp;&nbsp;<button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+
+
+
+        <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="Search.." name="search" size="35">
+            <button type="submit"> &#128269;</button>
+          </form>
+        </div>
+    </div>
+    </nav>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+    </script> 
+    
+
+
+    
+    
+        
+    
+    <div class="slideshow">
+        <img class="mySlides" src="pic/offer1.jpg" width="1600" height="500">
+        <img class="mySlides" src="pic/offer2.jpg" width="1600" height="500">
+        <img class="mySlides" src="pic/offer3.jpg" width="1600" height="500">
+        <img class="mySlides" src="pic/offer4.jpg" width="1600" height="500">
+        
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+    </script>
+    <hr>
+    <h2 class="promhead">WE PROMISE</h2>
+    <hr>
+    <div class="promise">
+        <img src="pic/icon1.jpg" alt="">&nbsp;&nbsp; We Dilever The Plants That We Show &nbsp;&nbsp;<img>
+        <img src="pic/icon2.jpg" alt="">&nbsp;&nbsp; We Dilever Plants With Safe Packing &nbsp;&nbsp;<img>
+        <img src="pic/icon3.jpg" alt=""> &nbsp;&nbsp;Reach Us. We Are Here To Listen You<img>
+    </div>
+    <hr>
+    
+    <div><h3><b>BEST SELLING</b></h3></div>
+    <hr>
+    <div class="row">
+        <div class=column>
+            <div class="card">
+                <img src="pic/moneyplant.jpg" alt="money plant" width="250" height="250">
+                <h1>Money plant</h1>
+                <p class="price">150 Rs</p>
+                <p>Freach money plant of 2ft...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class=column>
+            <div class="card">
+                <img src="pic/whiterose.jpg" alt="White rose" width="250" height="250">
+                <h1>White rose</h1>
+                <p class="price">100 Rs</p>
+                <p>Freach white rose of 1ft...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class=column>
+            <div class="card">
+                <img src="pic/hibiscus.jpg" alt="Hibiscus" width="250" height="250">
+                <h1>Hibiscus</h1>
+                <p class="price">100 Rs</p>
+                <p>Freach hibiscus of 1ft...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class=column>
+            <div class="card">
+                <img src="pic/moneyplant.jpg" alt="money plant" width="250" height="250">
+                <h1>Money plant</h1>
+                <p class="price">150 Rs</p>
+                <p>Freach money plant of 2ft...</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2 class="program">OUR PROGRAMS</h2>
+    <hr>
+    <div class="roww">
+        <div class="column1">
+          <img src="pic/pro1.png" alt="Snow" style="width:100%">
+          <button class="btn1">DONATE NOW</button>
+        </div>
+        <div class="column2">
+          <img src="pic/pro2.png" alt="Forest" style="width:100%">
+          <button class="btn2">SEARCH NOW</button>
+        </div>
+    </div>
+    <br>
+    <div class="roww">
+        <div class="column3">
+          <img src="pic/pro3.png" alt="Snow" style="width:100%">
+          <button class="btn3">CLICK HERE</button>
+        </div>
+        <div class="column4">
+          <img src="pic/pro4.png" alt="Forest" style="width:100%">
+          <button class="btn4">JOIN NOW</button>
+        </div>
+    </div>
+    <p class="head"><b>VIEWS BY PLANT PARENTS </b>
+    </p>
+    <br>
+    <div class="ishita">
+      <div class="image">
+          <img src="views/ishita.jpg" alt="person" width="900">
+      </div>
+       
+      <div class="text">
+        <p><b><i>"Plant the seed of meditation and reap the fruit of peace of mind."</i></b></p>
+        <p><i>By -Ishita thapliyal (writer)</i></p>
+      </div>
+        
+    </div>
+    
+      
+    <br>
+    <div class="roo">
+        <div class="colum">
+            <div class="viewbox">
+                <img src="views/IMG_20210612_222500_594.jpg" alt="person" width="250" height="250">
+                <div class="comments"><strong>COMMENT:</strong> thankyou Fresh_green_air for this beatifull marry gold it look like a shinny sun</div>
+            </div>
+        </div>
+        <div class="colum">
+          <div class="viewbox">
+            <img src="views/Screenshot_20210614-135052_Instagram.jpg" alt="person" width="250" height="250" >
+            <div class="comments"><strong>COMMENT:</strong> thankyou Fresh_green_air for this beatifull marry gold it look like a shinny sun</div>
+            
+          </div>
+        </div>    
+        <div class="colum">
+          <div class="viewbox">
+            <img src="views/IMG_20210613_174240_664.jpg" alt="person" width="250" height="250">
+            <div class="comments"><strong>COMMENT:</strong> thankyou Fresh_green_air for this beatifull marry gold it look like a shinny sun</div>
+          </div>
+            
+        </div>
+        <div class="colum">
+          <div class="viewbox">
+            <img src="views/IMG_20210614_001623_305.jpg" alt="person" width="250" height="250">
+            <div class="comments"><strong>COMMENT:</strong> thankyou Fresh_green_air for this beautifull marry gold it look like a shinny sun</div>
+            
+          </div>
+        </div>
+          
+     </div>
+    <h1 class="blank" ><button><a href="views.html">VIEW MORE</a> </button></h1>
+    <br>
+
+    <h2 class="follow">FOLLOW US</h2>
+
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
+    <a href="#" class="fa fa-skype"></a>
+    <a href="#" class="fa fa-android"></a>
+    <a href="#" class="fa fa-dribbble"></a>
+    <a href="#" class="fa fa-vimeo"></a>
+    <a href="#" class="fa fa-tumblr"></a>
+    <a href="#" class="fa fa-vine"></a>
+    <a href="#" class="fa fa-foursquare"></a>
+    <a href="#" class="fa fa-stumbleupon"></a>
+    <a href="#" class="fa fa-flickr"></a>
+    <a href="#" class="fa fa-yahoo"></a>
+    <a href="#" class="fa fa-reddit"></a>
+    <a href="#" class="fa fa-rss"></a>   
+
+ </body>
+</html>
